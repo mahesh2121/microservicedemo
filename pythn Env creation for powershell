@@ -1,0 +1,55 @@
+Creating a Python virtual environment on Ubuntu and installing required packages like Requests and Flask is a straightforward process. Here's a step-by-step guide:
+
+    Install Python:
+    Ensure Python is installed on your Ubuntu system. Python is pre-installed on many Ubuntu versions, but you can check its version using the following command:
+
+
+    python3 --version
+
+
+If Python is not installed, you can install it using the package manager:
+
+    sudo apt update
+    sudo apt install python3
+
+Install Python's venv module:
+Python's venv module allows you to create virtual environments. If it's not already installed, install it using apt as well:
+
+    sudo apt install python3-venv
+
+Create a project directory:
+Choose or create a directory where you want to set up your Python project. Let's say the directory is named my_project. Navigate to this directory in the terminal.
+
+Create a virtual environment:
+Inside the project directory, create a Python virtual environment using the venv module:
+
+    python3 -m venv venv
+
+Activate the virtual environment:
+Activate the virtual environment to work within it. This step ensures that any packages you install will only affect this specific environment and not the system-wide Python installation:
+
+    source venv/bin/activate
+
+
+Install required packages:
+With the virtual environment activated, you can now install the required packages like Requests and Flask using pip. Create a requirements.txt file with the required packages and their versions:
+
+Flask==2.0.1
+requests==2.26.0
+
+
+Then, install the packages using pip:
+
+    pip install -r requirements.txt
+
+Deactivate the virtual environment:
+When you're done working on your project, you can deactivate the virtual environment to return to the system-wide Python environment:
+
+    deactivate
+
+
+Reactivate the virtual environment (optional):
+If you need to work on the project again, navigate to the project directory and reactivate the virtual environment using the source 
+
+    source venv/bin/activate
+

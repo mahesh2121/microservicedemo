@@ -1,0 +1,9 @@
+FROM python:3.8-slim
+
+WORKDIR /app
+
+COPY weather_processor.py requirement.txt /app/
+
+RUN pip install -r requirement.txt
+
+CMD ["python", "weather_processor.py"]

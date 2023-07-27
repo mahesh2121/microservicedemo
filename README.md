@@ -1,0 +1,2 @@
+How you implement microservice in kubernetes.
+Kubernetes microservice architecture using Python and shell commands for automatikbon, we'll create two microservices: one for fetching weather data and another for processing and storing the data. We'll use Kubernetes to deploy and manage these microservices. For simplicity, we'll use Flask as the web framework.
